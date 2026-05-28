@@ -1,81 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meus objetivos do ano</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <div class="abas-textos">
-  <div class="aba-conteudo">
-    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
-    <h4 class="aba-conteudo-titulo-secundario">
-      Tempo para completar o objetivo
-    </h4>
-  </div>
-  <div class="aba-conteudo">
-    <h3 class="aba-conteudo-titulo-principal">
-      Criar 5 projetos em Javascript
-    </h3>
-    <h4 class="aba-conteudo-titulo-secundario">
-      Tempo para completar o objetivo
-    </h4>
-  </div>
-  <div class="aba-conteudo">
-    <h3 class="aba-conteudo-titulo-principal">
-      Criar um portfolio com os meus 3 melhores projetos
-    </h3>
-    <h4 class="aba-conteudo-titulo-secundario">
-      Tempo para completar o objetivo
-    </h4>
-  </div>
-  <div class="aba-conteudo">
-    <h3 class="aba-conteudo-titulo-principal">
-      Atualizar meu curriculo com os certificados da Alura
-    </h3>
-    <h4 class="aba-conteudo-titulo-secundario">
-      Tempo para completar o objetivo
-    </h4>
-  </div>
-</div>
-const botoes = document.querySelectorAll(".botao");
-console.log(botoes);
-for (let i = 0; i < botoes.length; i++) {
-  botoes[i].onclick = function () {
-    botoes[i].classList.add("ativo");
-  };
-}
-<div class="aba-conteudo ativo">
-  <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
-  <h4 class="aba-conteudo-titulo-secundario">
-    Tempo para completar o objetivo
-  </h4>
-  <div class="contador"></div>
-</div>
-<div class="aba-conteudo">
-  <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
-  <h4 class="aba-conteudo-titulo-secundario">
-    Tempo para completar o objetivo
-  </h4>
-  <div class="contador"></div>
-</div>
-<div class="aba-conteudo">
-  <h3 class="aba-conteudo-titulo-principal">
-    Criar um portfolio com os meus 3 melhores projetos
-  </h3>
-  <h4 class="aba-conteudo-titulo-secundario">
-    Tempo para completar o objetivo
-  </h4>
-  <div class="contador"></div>
-</div>
-<div class="aba-conteudo">
-  <h3 class="aba-conteudo-titulo-principal">
-    Atualizar meu currículo com os certificados da Alura
-  </h3>
-  <h4 class="aba-conteudo-titulo-secundario">
-    Tempo para completar o objetivo
-  </h4>
-  <div class="contador"></div>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro para Datas Especiais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Objetivos do Ano</h2>
+        <div class="conteudo">
+        <div class="botoes">
+            <button class="botao ativo">Aniversariante</button>
+            <button class="botao">Férias</button>
+            <button class="botao">Último dia de Aula</button>
+            <button class="botao">Prova PSS</button>
+        </div>
+        <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+                <h3 class="aba-conteudo-titulo-principal">Aniversário do 
+                  rafael</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Férias</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Férias de Final de Ano</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Estudar Para Novo PSS</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
